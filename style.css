@@ -1,16 +1,71 @@
 :root {
-    /* PRIMARY COLORS */
-    --darkViolet: hsl(256, 26%, 20%);
-    --grayishBlue: hsl(216, 30%, 68%);
+  /* PRIMARY COLORS */
+  --darkViolet: hsl(256, 26%, 20%);
+  --grayishBlue: hsl(216, 30%, 68%);
 
-    /* NEUTRAL COLORS */
-    --veryDarkViolet: hsl(270, 9%, 17%);
-    --darkGrayishViolet: hsl(273, 4%, 51%);
-    --veryLightGray: hsl(0, 0%, 98%);
+  /* NEUTRAL COLORS */
+  --veryDarkViolet: hsl(270, 9%, 17%);
+  --darkGrayishViolet: hsl(273, 4%, 51%);
+  --veryLightGray: hsl(0, 0%, 98%);
 
-    /* TYPOGRAPHY */
-    --dmSerifDisplay: 'DM Serif Display', sans-serif;
-    --karla: 'Karla', sans-serif;
+  /* TYPOGRAPHY */
+  --dmSerifDisplay: "DM Serif Display", sans-serif;
+  --karla: "Karla", sans-serif;
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+*::before,
+*,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 0.9;
+}
+
+h1, h2, h3 {
+    font-family: var(--dmSerifDisplay);
+}
+
+ul {
+    list-style: none;
+    font-family: var(--karla);
+}
+p {
+    font-family: var(--karla);
+    font-weight: 400;
+}
+
+.header {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-img-container {
+  background-image: url("/images/image-intro-mobile.jpg");
+  background-size: cover;
+  /* 450px = 28.125em */
+  height: 28.125em;
+  background-position: center;
+}
+
+.main-text-container {
+    color: var(--veryLightGray);
+    padding: 70px 15px;
+    text-align: center;
+    background-color: var(--darkViolet);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
