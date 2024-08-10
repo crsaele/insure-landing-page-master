@@ -22,22 +22,36 @@
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    line-height: 0.9;
+  font-size: 2.5rem;
+  padding: 0 25px;
+  margin: 10px 0;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
-h1, h2, h3 {
-    font-family: var(--dmSerifDisplay);
+h1,
+h2,
+h3 {
+  font-family: var(--dmSerifDisplay);
 }
 
 ul {
-    list-style: none;
-    font-family: var(--karla);
+  list-style: none;
+  font-family: var(--karla);
 }
+
+button {
+  border: none;
+}
+
 p {
-    font-family: var(--karla);
-    font-weight: 400;
+  font-family: var(--karla);
+  font-weight: 400;
+}
+
+div p {
+  line-height: 1.5;
+  padding: 20px;
 }
 
 .header {
@@ -45,6 +59,10 @@ p {
   padding: 15px;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu-bar {
+  display: none;
 }
 
 .main-img-container {
@@ -56,10 +74,25 @@ p {
 }
 
 .main-text-container {
-    color: var(--veryLightGray);
-    padding: 70px 15px;
-    text-align: center;
-    background-color: var(--darkViolet);
+  color: var(--veryLightGray);
+  padding: 70px 15px;
+  text-align: center;
+  background-image: url("images/bg-pattern-intro-left-mobile.svg"),
+    url("images/bg-pattern-intro-right-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: var(--darkViolet);
+}
+
+.hero-btn {
+  background-color: var(--darkViolet);
+  border: 2px solid var(--veryLightGray);
+  color: var(--veryLightGray);
+  text-transform: uppercase;
+  font-family: var(--karla);
+  padding: 10px 25px;
+  margin: 10px 0;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 .attribution {
