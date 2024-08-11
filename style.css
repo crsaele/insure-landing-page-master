@@ -79,6 +79,7 @@ div p {
   text-align: center;
   background-image: url("images/bg-pattern-intro-left-mobile.svg"),
     url("images/bg-pattern-intro-right-mobile.svg");
+  background-position: top left, top right;
   background-repeat: no-repeat;
   background-color: var(--darkViolet);
 }
